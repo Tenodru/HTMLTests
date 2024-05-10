@@ -1,0 +1,861 @@
+/*  
+    CSS for Overwatch Index Home
+    Authors: Alex Kong, Victor Do, Chance McCoy, Catherine Kim
+    Last Updated: 04/19/2021
+*/
+
+
+.loreButton {
+    background-color: #ffcc40;
+    border: 2px solid lightgray;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 20px; /* increased space between section headers and section text */
+}
+
+.sectionText {
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.socialColumns {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.socialLeft {
+    width: 50%;
+}
+
+.socialRight {
+    width: 50%;
+    text-align: center;
+}
+
+.socialButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+#WITSection, #loreSection, #socialSection {
+    margin-bottom: 50px; /* increased space between each section */
+}
+
+/* Font and text. */
+.font {
+    /* Standard text font used across the site. */
+    font-family: Consolas;
+}
+
+.buttonText {
+    /* Standard text font used in large buttons. */
+    font-size: 20px;
+}
+
+.pageText {
+    /* Content text (not used in major headers or titles) */
+    padding-left: 10px;
+}
+
+.sectionHeaderText {
+    /* The header to a section. */
+    text-align: center;
+    font-size: 25px;
+}
+.sectionHeaderTextSmall {
+    /* The header to a minor section. */
+    text-align: center;
+    font-size: 20px;
+}
+
+.tinyText {
+    /* Very small text, used for technical info (like remaining characters). */
+    font-size: 11px;
+}
+
+/* Dividers. */
+.divider {
+    /* A divider, for design purposes. */
+    background-color: #ffcc40;
+    margin-bottom: 10px;
+}
+.divider.hor.large {
+    /* A horizontal large divider. */
+    height: 10px;
+    width: 100%;
+}
+.divider.hor.medium {
+    /* A horizontal medium divider. */
+    height: 5px;
+    width: 100%;
+}
+.divider.hor.small {
+    /* A horizontal medium divider. */
+    height: 2.5px;
+    width: 100%;
+}
+.divider.ver.medium {
+    /* A vertical medium divider. */
+    height: 100%;
+    width: 5px;
+}
+
+.contentSeparator {
+    /* A content separator element. */
+}
+.contentSeparator.small {
+    /* A small content separator element. */
+    height: 10px;
+}
+
+/* Element relative sizing. */
+.widthFull {
+    /* 100% width. */
+    width: 100%;
+}
+
+/* Alignment. */
+.floatLeft {
+    /* Element will float left. */
+    float: left;
+    vertical-align: top;
+}
+.floatRight {
+    /* Element will float right. */
+    float: right;
+    vertical-align: top;
+}
+
+.center {
+    /* Element will be centered. Use for containers. */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerContent {
+    /* Subelements will be centered. */
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.barButton {
+    /* A button container in a bar element. */
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    
+    width: 19%;
+    height: 100%;
+}
+.barButton.nav {
+    /* A navigation button container. */
+    background-color: #cd5fd9;
+}
+
+/* Elements for the page header section. */
+.navButton {
+    /* A button element in the navBar. */
+    size: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #cd5fd9;
+}
+.navButton.mini {
+    /* A smaller navigation button. Used for sidebar buttons like the About Us navButton. */
+    size: 300px;
+    width: 100%;
+}
+
+#pageHeadSection {
+    /* Head section of the page, has the logo, title, subtitle, and navBar. */
+
+}
+#headSectionTop {
+    /* Top half, has logo, title, subtitle. */
+    min-height: 100px;
+    max-height: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+#headSectionBot {
+    /* Bottom half, has divider and navBar. */
+    
+}
+
+/* Elements for the logo. */
+#logoContainer {
+    /* Container for the website logo. */
+    max-width: 15%;
+    max-height: auto;
+    height: auto;
+    width: 15%;
+}
+#logo {
+    /* The website logo, located in the top-left corner. */
+    height: 100%;
+    width: 100%;
+}
+
+/* Elements for the page title. */
+#titleContainer {
+    /* Container for the website title. */
+    height: 100%;
+    width: 70%;
+}
+#pageTitle {
+    /* Text for the website title. */
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -30px;
+}
+#pageSubtitle {
+    /* Text for the website subtitle (the page name). */
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* Elements for the right sidebar in the header. */
+#sidebarContainer {
+    /* The sidebar container. */
+    width: 15%;
+}
+
+/* Elements for the navigation bar. */
+#navBar {
+    /* The navigation bar element. */
+    max-width: 90%;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#barCenter {
+    /* The center container of a bar element. */
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+#navButton {
+    /* A button element in the navBar. */
+    size: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #cd5fd9;
+}
+
+/* Elements for major page sections. */
+#sectionHeader {
+    /* A header on the page for major sections. */
+    margin-top: 50px;
+}
+#sectionBodyContainer {
+    /* The container for a section body. */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sectionBody {
+    /* The text body of a major section. */
+    text-indent: 80px;
+}
+#sectionBody {
+    /* The text body of a major section. */
+    text-indent: 80px;
+}
+.sectionBodyColumn {
+    /* A container. A vertical column splitting the section in half. */
+    width: 45%;
+    float: left;
+}
+.sectionBodyColumn.left {
+    /* Left column. */
+    margin-right: 2.5%;
+}
+.sectionBodyColumn.right {
+    /* Right column. */
+    margin-left: 2.5%;
+}
+#cinematicsButton {
+    /* The cinematics button. */
+    width: 50%;
+    height: 100px;
+    background-color: #ffcc40;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Elements for the social links section. */
+#twitterEmbed {
+    /* Formatting for an embedded Twitter feed. */
+    float: right;
+    width: 400px;
+}
+#socialLinkButton {
+    /* A social link container. */
+    width: 50%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#socialLinkContainer {
+    /* A social link container. */
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+}
+#socialIconContainer {
+    /* The icon container for a social link button. */
+    width: 10%;
+    height: auto;
+}
+#socialIcon {
+    /* The icon for a social link button. */
+    width: 100%;
+    height: auto;
+}
+.socialText {
+    /* The text for a social link button. */
+    height: 100%;
+    font-size: 18px;
+    padding-left: 20px;
+    display: block;
+}
+
+
+/****************************************************************************
+/* About Us Page css. */
+/* Section Content Containers */
+.sectionContainerStandard {
+    /* Standard-size content container. */
+    overflow: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.sectionContainerStandard.inner {
+    /* Standard-size inner content container. */
+    width: 100%;
+}
+.sectionContainerStandard.inner.center {
+    /* Standard-size inner content container, centered. */
+    display: flex;
+}
+.imageContainer {
+    /* An image container. */
+    width: 20%;
+    height: auto;
+}
+.bodyContainer {
+    /* A content body container. */
+    width: 65%;
+}
+.bodyContainer.full {
+    /* A full-width content body container. */
+    width: 100%;
+}
+.bodyContainer.medium {
+    /* A medium-width content body container. */
+    width: 80%;
+}
+.bodyContainer.center {
+    /* A content body container. */
+    margin-left: auto;
+    margin-right: auto;
+}
+.bodyContainer.left {
+    /* A left-hand-side body container. */
+    margin-right: 5%;
+}
+.bodyContainer.right {
+    /* A right-hand-side body container. */
+    margin-left: 5%
+}
+
+
+/****************************************************************************
+/* Suggest Changes Page CSS. */
+.formRow {
+   /* A row in the Suggest Changes form. */
+   margin-bottom: 15px;
+   min-width: 400px;
+   width: 100%;
+}
+.formRow.end {
+   /* The last row in the Suggest Changes form. */
+   margin-bottom: 25px;
+}
+
+#suggestFormContainer {
+    /* The container holding the Suggest Changes form. */
+    min-width: 400px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#category {
+    /* The dropdown list. */
+    width: 300px;
+    height: 30px;
+}
+
+#comments {
+    /* The comments text area. */
+    min-width: 300px;
+    width: 90%;
+    height: 400px;
+}
+
+#submitButton {
+    /* The submit button. */
+    height: 30px;
+}
+
+
+/****************************************************************************
+/* Hero Page css. */
+.iconContainer{
+    float:left;
+}
+
+.show{
+    /* Displays the hover box*/
+    position:absolute;
+    z-index: 3;
+    display: block;
+    opacity: 0.8;
+    width: 165px;
+    height: 87px;
+
+    /* Text */
+    font-size:20px;
+    font-weight: bold;
+    font-family: arial;
+    color:white;
+    padding-top: 63px;
+    text-align: center;
+}
+
+.hide{
+    /* Hides the hover box */
+    display: none;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+/****************************************************************************
+/* Maps Page css. */
+#mapContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+#mapButton {
+    width: 300px;
+    height: 210px;
+    border: 3px solid black;
+    background-color: #ffcc40;
+    margin: 10px;
+}
+#mapImage {
+    float: left;
+    border-bottom: 3px solid black;
+}
+#mapCaption {
+    position: relative;
+    top: 6px;
+    right: 70px;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+#zoom_outer {
+    margin: 0 auto;
+    background-color: black;
+    border: 5px solid black;
+    overflow: hidden;
+}
+#zoom {
+    width: 100%;
+    height: 100%;
+    transform-origin: 0px 0px;
+    transform: scale(1) translate(0px, 0px);
+    cursor: grab;
+}
+div#zoom > img {
+    width: 100%;
+    height: auto;
+}
+iframe{
+    display: block;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+#mapAboutSection{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: 250px;
+}
+
+
+/****************************************************************************
+/* History Page css. */
+.timelineElementContainer {
+    /* Container for the timeline element. */
+    width: 100%;
+    max-width: 1000px;
+    min-width: 761px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.timelineElementLeftContainer {
+    /* Hero icon container for the timeline element. */
+    width: 6%;
+    max-width: 60px;
+    min-width: 45.66px;
+    float: left;
+}
+.timelineElementMainContainer {
+    /* Main bar chart container for the timeline element. */
+    width: 92%;
+    max-width: 930px;
+    min-width: 700px;
+    float: left;
+}
+.timelineElementBotContainer {
+    /* Dates container for the timeline element. */
+    float: right;
+    width: 95%;
+}
+.timelineElementDividerVert {
+    /* Vertical divider for the timeline element. */
+    background-color: black;
+    width: 1%;
+    max-width: 10px;
+    min-width: 7px;
+    margin-left: 5px;
+    float: left;
+}
+.timelineElementDividerHor {
+    /* Horizontal divider for the timeline element. */
+    background-color: black;
+    float: right;
+}
+.timelineTimeDivider {
+    /* Vertical line dividing time periods in the chart. */
+    float: left;
+}
+.tlMonthDividerMajor {
+    /* The actual line inside the divider. */
+    border-style: none solid none none;
+    border-width: 2px;
+    float: left;
+}
+.tlMonthDivider {
+    /* A divider for each month. */
+    border-style: none dotted none none;
+    border-width: 1px;
+    float: left;
+}
+
+.tlMetaContainer {
+    /* A container for the meta bar segments. */
+    position: absolute;
+}
+.tlMetaHero {
+    /* A hero's collection of meta segments. */
+    float: left;
+}
+.tlMetaHeroSpacing {
+    /* Spacing between bars. */
+    position: relative;
+    float: left;
+}
+.tlMetaSegment {
+    /* A meta segment. */
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+}
+
+
+#thisMetaSection {
+    /* The "Meta Description" section. */
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffcc40;
+    padding-bottom: 30px;
+}
+#thisMetaHeader {
+    /* The "Meta Description" section header. */
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Hero colors. */
+.dva {
+    background-color: #FF1493;
+}
+.orisa {
+    background-color: #4A8B47;
+}
+.rein {
+    background-color: #919DA1;
+}
+.hog {
+    background-color: #AD8957;
+}
+.sigma {
+    background-color: #909B9E;
+}
+.winston {
+    background-color: #9FA4BB;
+}
+.ball {
+    background-color: #DA9342;
+}
+.zarya {
+    background-color: #E87FB6;
+}
+.ashe {
+    background-color: #67686A;
+}
+.bastion {
+    background-color: #7B8F7A;
+}
+.doom {
+    background-color: #83524B;
+}
+.echo {
+    background-color: #9BCBF5;
+}
+.genji {
+    background-color: #95EE42;
+}
+.hanzo {
+    background-color: #B8B389;
+}
+.junk {
+    background-color: #E8BB52;
+}
+.mccree {
+    background-color: #AC5C60;
+}
+.mei {
+    background-color: #6BA9EA;
+}
+.pharah {
+    background-color: #3F7CC3;
+}
+.reaper {
+    background-color: #7D4556;
+}
+.soldier {
+    background-color: #6A7794;
+}
+.sombra {
+    background-color: #745AB9;
+}
+.symmetra {
+    background-color: #8EBDCF;
+}
+.torb {
+    background-color: #BE736D;
+}
+.tracer {
+    background-color: #D79342;
+}
+.widow {
+    background-color: #9C69A7;
+}
+.ana {
+    background-color: #6E86AC;
+}
+.baptiste {
+    background-color: #57B1CB;
+}
+.brigitte {
+    background-color: #8A615C;
+}
+.lucio {
+    background-color: #83C156;
+}
+.mercy {
+    background-color: #DFDCB5;
+}
+.moira {
+    background-color: #9473DC;
+}
+.zenyatta {
+    background-color: #ECE581;
+}
+
+.heroIconTL {
+    /* A hero icon used for the timeline element. */
+    width: 100%;
+    height: auto;
+}
+.timelineDate {
+    /* A date on the x-axis of the timeline element. */
+    float: left;
+    font-size: 18px;
+}
+.timelineDateSpacing {
+    /* Spacing between dates on the x-axis of the timeline element. */
+    float: left;
+}
+
+/* General aesthetics. */
+#heroesMainSection{
+    background-image: url(Images/OWIndexBackgroundDark.png);
+    background-repeat: repeat;
+    margin-top: 20px;
+    border: 3px solid black;
+}
+#thisMetaSection{
+    background-image: url(Images/OWIndexBackgroundDark.png);
+    background-repeat: repeat;
+    border: 3px solid black;
+}
+#heropageleftcol{
+
+    width: 48%;
+    float:left;
+}
+#heropagerightcol{
+
+    width:48%;
+    float:left;
+}
+#heronamehead{
+
+    color:#ffcc40;
+    border:5px solid black;
+    background-color: #23395d;
+    margin-top: 60px;
+
+}
+#herostatcard{
+
+    display: block;
+    margin-top: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    border:5px solid black;
+    background-color: #23395d;
+    width: 70%;
+}
+#heroname{
+
+    border:2px solid black;
+    background-color: #cecece;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+
+}
+#characterpic{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    border:5px solid black;
+    background-color: #cecece;
+    width: 210px;
+    height:230px;
+
+}
+#herostat{
+
+    border:3px solid black;
+    width:150px;
+    background-color: #cecece;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#herovid{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#abilityback{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:5px solid black;
+    background-color: #23395d;
+
+}
+#abilities{
+
+    border:3px solid black;
+    background-color: #cecece;
+    text-align: center;
+    width:95%;
+    margin-top:7px;
+    margin-bottom: 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#abilitypic{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    border:5px solid black;
+    width:300px;
+
+}
+#heroesMainSection{
+    background-image: url(Images/OWIndexBackgroundDark.png);
+    background-repeat: repeat;
+    margin-top: 20px;
+    border: 3px solid black;
+}
+
+body{
+    background-image: url(Images/OWIndexBackgroundLight.png);
+    background-repeat: repeat;
+}

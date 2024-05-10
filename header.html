@@ -1,0 +1,45 @@
+<!-- Head section of page, has logo, title, and navBar. -->
+    <section id="pageHeadSection">
+        <!-- Top half, has logo, title, subtitle, About Us button. -->
+        <section id="headSectionTop">
+            <div class="floatLeft" id="logoContainer">
+                <img id="logo" src="https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/Images/OWIndexLogo.png" alt="OWIndexLogo">
+            </div>
+            <div class="floatLeft" id="titleContainer">
+                <div class="font" id="pageTitle"><h1> The Overwatch Index </h1></div>
+                <div id="subtitleContainer">
+                    <div class="font" id="pageSubtitle">Home</div>
+                </div>
+            </div>
+            <div class="floatLeft" id="sidebarContainer">
+                <button class="font buttonText navButton mini" id="aboutUsButton" title="AboutUs" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteAboutUs.html'">About Us</button>
+                <button class="font buttonText navButton mini" id="suggestButton" title="Suggest" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteSuggestChanges.php'">Help Us Improve!</button>
+                <button class="font buttonText navButton mini" id="accountButton" title="Account" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteAccount.php'">Account</button>
+            </div>
+        </section>
+
+        <!-- Clear float formatting. -->
+        <div style="clear:both;"></div>
+
+        <section class="divider hor large"></section>
+
+        <!-- Bottom half, has horizontal divider, navBar. -->
+        <section id="headSectionBot">
+            <div id="navBar">
+                <div id="barCenter">
+                    <div class="barButton nav">
+                        <button class="font buttonText navButton mini" id="homeButton" title="Home" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteHome.php'">Home</button>
+                    </div>
+                    <div class="barButton nav">
+                        <button class="font buttonText navButton mini" id="heroesButton" title="Heroes" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteHeroes.html'">Heroes</button>
+                    </div>
+                    <div class="barButton nav">
+                        <button class="font buttonText navButton mini" id="mapsButton" title="Maps" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteMaps.html'">Maps</button>
+                    </div>
+                    <div class="barButton nav">
+                        <button class="font buttonText navButton mini" id="historyButton" title="History" onclick="window.location.href='https://spring-2021.cs.utexas.edu/cs329e-bulko/tenodru/Project/websiteHistory.html'">History</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
